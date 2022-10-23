@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.left_menu{
+    color: rgb(35, 169, 202);
+}
+.left_menu p,li{
+    text-decoration: underline;
+}
+.content code{
+    color:gray;
+    background-color: rgb(214, 214, 214);
+}

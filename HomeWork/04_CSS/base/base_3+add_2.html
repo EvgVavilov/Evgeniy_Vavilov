@@ -7,13 +7,23 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        counter-reset: list 65;
+    }
     table{
         border-style: double;
         border-collapse: collapse;
+
     }
     td{
         padding: 50px;
         border: 1px solid;
+        counter-increment: list -1;
+    }
+    td::before{
+        content: counter(list);
+        color: brown;
+        font-size: larger;
     }
     tr:nth-of-type(2n) td:nth-of-type(2n){
         background-color: black;

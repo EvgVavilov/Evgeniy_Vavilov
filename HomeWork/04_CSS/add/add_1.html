@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href$=".doc"]::before{
+            content:url(../base/media/file.jpg) ;
+        }
+        a[target="_blank"]::after{
+            content: url(../base/media/document.png);
+        }
+        li{
+            list-style: none;
+        }
+        li > a > img {
+            display: none;
+        }
+        li:hover img {
+            display: inline-block;
+        }
+        p{
+            border-style: groove;
+            border-width: 1px;
+            border-top-right-radius: 2em ;
+            border-bottom-left-radius: 2em;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Форматы файлов</h1>
+    <div> 
+        <p>
+            .DOC или же .doc (От английского <a href="" target="_blank">document</a> ) - расширегие имени файла, используемое для файлов,
+        предсавляющих текст с разметкой или без. <br>
+        <a href="">Документ MS Word </a> <img src="../base/media/word.jpg" alt="word">
+        </p>
+    </div>
+    <div>
+        <p>
+            Portable Document Format <a href="" target="_blank"> PDF</a>)-межплатформенный формат электронных документов разработанный фирмой Adode System с использованием ряда возможностей языка Postscript <br>
+           <a href=""> Документ PDF</a> <img src="../base/media/pdf.png" alt="pdf">
+    
+        </p>
+    </div>
+    <div>
+        <p>
+            ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычн имеет расширение <a href="" target="_blank"> .zip</a> и хранит в сжатом или несжатом виде несколько файлов. <br>
+            <a href="" > Архив</a><img src="../base/media/zip.gif" alt="gif">
+        </p>
+    </div>
+    <h2>Этот список файлов</h2>
+    <div>
+        <ul>
+        <li>
+            <a href="word.doc"> Документ MS Word 
+                <img src="../base/media/word.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="pdf.doc">Документ PDF
+            <img src="../base/media/pdf.png" alt="pdf"> 
+            </a>
+        </li>
+        <li>
+            <a href="zip.doc"> Архив
+             <img src="../base/media/zip.gif" alt="zip"> 
+            </a>
+        </li>
+    </ul>
+    </div>
+
+</body>
+</html>
